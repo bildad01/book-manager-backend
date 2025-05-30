@@ -1,5 +1,4 @@
 package com.mini_book.miniBook.dto;
-
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -75,4 +74,7 @@ public class BookDTO {
     public static class CoverResponse {
         private String coverImageUrl;
     }
+
+public class BookDTO {
+
 }
