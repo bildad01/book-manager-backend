@@ -1,12 +1,12 @@
 package com.mini_book.miniBook.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.AllArgsConstructor;import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.time.LocalDateTime;
+
 
 @Entity
 @AllArgsConstructor
@@ -14,11 +14,9 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 public class Book {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+    private Long bookId;
 
     @Column(nullable = false, length = 100)
     private String title;
@@ -29,11 +27,10 @@ public class Book {
     @Column(length = 255)
     private String coverImageUrl;
 
-    @Column(nullable = false)
+    @Column
     private LocalDateTime createdAt;
 
-    @Column(nullable = false)
+    @Column(name = "updated_at", nullable = true)
     private LocalDateTime updatedAt;
+
 }
-
-
