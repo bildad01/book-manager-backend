@@ -36,6 +36,9 @@ public class BookDTO {
 
         @NotBlank(message = "내용은 필수 입력 값입니다.")
         private String content;
+
+        @NotBlank(message = "저자 이름은 필수 입력 값입니다")
+        private String author;
     }
 
     // [GET] 단일 도서 조회 응답
@@ -51,6 +54,7 @@ public class BookDTO {
         private String coverImageUrl;
         private LocalDateTime createdAt;
         private LocalDateTime updatedAt;
+        private String author;
     }
 
     // [GET] 도서 목록 요약 응답
@@ -64,6 +68,7 @@ public class BookDTO {
         private String title;
         private String coverImageUrl;
         private LocalDateTime createdAt;
+        private String author;
     }
 
     // [POST] AI 표지 생성 응답

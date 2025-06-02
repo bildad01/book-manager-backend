@@ -33,4 +33,8 @@ public class Book {
     @Column(name = "updated_at", nullable = true)
     private LocalDateTime updatedAt;
 
+    @Column(nullable = false)
+    private String author;
+
+
 }
