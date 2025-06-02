@@ -35,7 +35,8 @@
     @GetMapping
     public List<Book> findAllBook(){
         return bookService.findAllBook();
-    } ```
+    }
+```
 
 ---
 
@@ -76,7 +77,8 @@ public class Book {
     @Column(name = "updated_at", nullable = true)
     private LocalDateTime updatedAt;
 
-} ```
+}
+```
 
 ---
 
