@@ -1,12 +1,12 @@
 # 📚 Book-manager
 KT AIVLE School 4차 미니 프로젝트 :  **Spring Boot + React 기반 도서 관리 및 AI 표지 생성 시스템**
 
-# Backend 
+## Backend 
 - 서연우, 육정민
 - 김민아 (PM + support)
 
 ---
-# JDBC
+## JDBC
 jdbc URL : jdbc:h2:~/librarydata <br/>
 username : sa <br/>
 password : 1234 <br/>
