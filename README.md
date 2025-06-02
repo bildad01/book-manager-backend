@@ -6,13 +6,6 @@ KT AIVLE School 4차 미니 프로젝트 :  **Spring Boot + React 기반 도서 
 - 김민아 (PM + support)
 
 ---
-
-프론트엔드와 백엔드 서버간 RestAPI 통신 test 했을 때 CORS에러 발생 <br/>
-	-> confing 패키지안에 Webconfig 파일 만들어서 해결 <br/>
-
-application.yml 파일 수정하여 database 설정 <br/>
-
----
 # JDBC
 jdbc URL : jdbc:h2:~/librarydata <br/>
 username : sa <br/>
@@ -30,7 +23,25 @@ password : 1234 <br/>
  	author // 작가
  ---
 
- 
+├── config
+│   └── WebConfig.java
+├── controller        
+│   └── BookController.java
+├── dto              
+│   └── BookDto.java
+├── domain          
+│   └── Book.java
+├── repository       
+│   └── BookRepository.java
+├── exception             
+│   └── ResourceNotFoundException.java
+├── service             
+│   └── BookService.java
+│   └── BookServiceImpl.java
+└── BookManagementApplication.java  
+```
+
+ ---
 
 ### BookController.java
 
