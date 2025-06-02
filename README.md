@@ -5,7 +5,7 @@
 //클라이언트는 이를 통해 책을 추가, 조회, 수정, 삭제할 수 있음.<br/>
 
 // 도서를 신규 등록  
- @PostMapping
+``` @PostMapping
     public Book createBook(@RequestBody Book book){
         book.setCreatedAt(LocalDateTime.now());
         return bookService.insertBook(book);
@@ -34,7 +34,7 @@
     @GetMapping
     public List<Book> findAllBook(){
         return bookService.findAllBook();
-    }
+    } ```
 
 ---
 
@@ -42,7 +42,7 @@
 //도서 정보를 표현 <br/>
 // JPA 가 클래스를 기반으로 book 테이블을 자동 생성 <br/>
 
-@Entity
+``` @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -75,7 +75,7 @@ public class Book {
     @Column(name = "updated_at", nullable = true)
     private LocalDateTime updatedAt;
 
-}
+} ```
 
 ---
 
