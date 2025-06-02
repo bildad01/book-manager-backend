@@ -160,6 +160,7 @@ public class BookDTO {
 
 ## BookService
 
+``` 
 public interface BookService {
     //도서등록
     Book insertBook(Book book);
@@ -177,6 +178,7 @@ public interface BookService {
     List<Book> findAllBook();
 
 }
+``` 
 
 ---
 
@@ -184,7 +186,7 @@ public interface BookService {
 //BookService 인터페이스를 구현한 클래스 <br/>
 // 실제 비즈니스 로직을 수행하는 서비스 구현체 <br/>
 
-
+``` 
 @Service
 @RequiredArgsConstructor
 public class BookServiceImpl implements BookService {
@@ -226,3 +228,4 @@ public class BookServiceImpl implements BookService {
         return bookRepository.findAll();
     }
 }
+``` 
