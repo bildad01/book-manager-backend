@@ -10,6 +10,12 @@
 application.yml 파일 수정하여 database 설정 <br/>
 
 ---
+# JDBC
+jdbc URL : jdbc:h2:~/librarydata
+username : sa
+password : 1234
+
+---
 
 ## Book 엔티티 클래스 정의
 	BookId (PK) //아이디 
