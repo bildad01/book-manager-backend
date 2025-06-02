@@ -1,10 +1,10 @@
 ## BookController.java
 
 //도서(Book)에 대한 CRUD 기능을 제공 <br/>
-//도서 관리 기능을 제공하는 REST API 컨트롤러로,
-//클라이언트는 이를 통해 책을 추가, 조회, 수정, 삭제할 수 있음.
+//도서 관리 기능을 제공하는 REST API 컨트롤러로, <br/>
+//클라이언트는 이를 통해 책을 추가, 조회, 수정, 삭제할 수 있음.<br/>
 
-// 도서를 신규 등록   
+// 도서를 신규 등록  
  @PostMapping
     public Book createBook(@RequestBody Book book){
         book.setCreatedAt(LocalDateTime.now());
@@ -39,8 +39,8 @@
 ---
 
 ## Book.java
-//도서 정보를 표현
-// JPA 가 클래스를 기반으로 book 테이블을 자동 생성
+//도서 정보를 표현 <br/>
+// JPA 가 클래스를 기반으로 book 테이블을 자동 생성 <br/>
 
 @Entity
 @AllArgsConstructor
@@ -80,8 +80,8 @@ public class Book {
 ---
 
 ## BookDTO.java
-//클라이언트와의 통신에 사용이 됨.
-//API목정(등록, 수정, 조회)등에 따라 정리된 내부 정적 클래스로 구성
+//클라이언트와의 통신에 사용이 됨. <br/>
+//API목정(등록, 수정, 조회)등에 따라 정리된 내부 정적 클래스로 구성 <br/>
 
 public class BookDTO {
 
@@ -178,8 +178,8 @@ public interface BookService {
 ---
 
 ##  BookServiceImpl.java
-//BookService 인터페이스를 구현한 클래스
-// 실제 비즈니스 로직을 수행하는 서비스 구현체
+//BookService 인터페이스를 구현한 클래스 <br/>
+// 실제 비즈니스 로직을 수행하는 서비스 구현체 <br/>
 
 
 @Service
