@@ -18,6 +18,7 @@ application.yml 파일 수정하여 database 설정 <br/>
 	CreatedAt //생성일자
 	UpdatedAt //수정일자
 	coverImageUrl //이미지url
+ 	author // 작가
  ---
 
  
