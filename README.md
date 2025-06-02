@@ -1,6 +1,13 @@
 # Backend 
 - 서연우, 육정민
-- 김민아 (support)
+- 김민아 (PM + support)
+
+---
+
+프론트엔드와 백엔드 서버간 RestAPI 통신 test 했을 때 CORS에러 발생
+	-> confing 패키지안에 Webconfig 파일 만들어서 해결 <br/>
+
+application.yml 파일 수정하여 database 설정 <br/>
 
 ---
 
