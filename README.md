@@ -119,7 +119,7 @@ public class Book {
 
 ### BookDTO.java
 //클라이언트와의 통신에 사용이 됨. <br/>
-//API목정(등록, 수정, 조회)등에 따라 정리된 내부 정적 클래스로 구성 <br/>
+//API목적(등록, 수정, 조회)등에 따라 정리된 내부 정적 클래스로 구성 <br/>
 
 ``` 
 public class BookDTO {
