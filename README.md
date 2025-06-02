@@ -4,15 +4,18 @@
 
 ---
 
-### Book 엔티티 클래스 정의
+## Book 엔티티 클래스 정의
 	BookId (PK) //아이디 
 	Title //제목
 	Content //내용
 	CreatedAt //생성일자
 	UpdatedAt //수정일자
 	coverImageUrl //이미지url
+ ---
 
-## BookController.java
+ 
+
+### BookController.java
 
 //도서(Book)에 대한 CRUD 기능을 제공 <br/>
 //도서 관리 기능을 제공하는 REST API 컨트롤러로, <br/>
@@ -54,7 +57,7 @@
 
 ---
 
-## Book.java
+### Book.java
 //도서 정보를 표현 <br/>
 // JPA 가 클래스를 기반으로 book 테이블을 자동 생성 <br/>
 
@@ -96,7 +99,7 @@ public class Book {
 
 ---
 
-## BookDTO.java
+### BookDTO.java
 //클라이언트와의 통신에 사용이 됨. <br/>
 //API목정(등록, 수정, 조회)등에 따라 정리된 내부 정적 클래스로 구성 <br/>
 
@@ -173,7 +176,7 @@ public class BookDTO {
 ``` 
 ---
 
-## BookService
+### BookService
 // 비지니스 로직 처리 <br/>
 ``` 
 public interface BookService {
@@ -197,7 +200,7 @@ public interface BookService {
 
 ---
 
-##  BookServiceImpl.java
+###  BookServiceImpl.java
 //BookService 인터페이스를 구현한 클래스 <br/>
 // 실제 비즈니스 로직을 수행하는 서비스 구현체 <br/>
 
