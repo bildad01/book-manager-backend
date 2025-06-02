@@ -20,7 +20,8 @@ password : 1234 <br/>
 	CreatedAt //생성일자
 	UpdatedAt //수정일자
 	coverImageUrl //이미지url
- 
+ ---
+ ### 주요 디렉토리  구조  
  ```
 ├── config
 │   └── WebConfig.java
