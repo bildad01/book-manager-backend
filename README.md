@@ -17,7 +17,9 @@ password : 1234 <br/>
 	BookId (PK) //아이디 
 	Title //제목
 	Content //내용
-조
+	CreatedAt //생성일자
+	UpdatedAt //수정일자
+	coverImageUrl //이미지url
  
  ```
 ├── config
