@@ -22,6 +22,9 @@ public class BookDTO {
         private String content;
 
         private String coverImageUrl;
+
+        @NotBlank(message = "저자 이름은 필수 입력 값입니다")
+        private String author;
     }
 
     // 🛠 [PUT] 도서 수정 요청
