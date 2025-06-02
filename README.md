@@ -11,9 +11,9 @@ application.yml 파일 수정하여 database 설정 <br/>
 
 ---
 # JDBC
-jdbc URL : jdbc:h2:~/librarydata
-username : sa
-password : 1234
+jdbc URL : jdbc:h2:~/librarydata <br/>
+username : sa <br/>
+password : 1234 <br/>
 
 ---
 
