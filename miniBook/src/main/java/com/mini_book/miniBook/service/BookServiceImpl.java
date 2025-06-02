@@ -33,9 +33,9 @@ public class BookServiceImpl implements BookService {
         );
         b.setTitle(book.getTitle());
         b.setContent(book.getContent());
-        b.setCreatedAt(book.getCreatedAt());
         b.setUpdatedAt(book.getUpdatedAt());
         b.setCoverImageUrl(book.getCoverImageUrl());
+        b.setAuthor(book.getAuthor());
         return bookRepository.save(b);
     }
 
