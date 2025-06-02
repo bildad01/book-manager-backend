@@ -4,8 +4,9 @@
 //도서 관리 기능을 제공하는 REST API 컨트롤러로, <br/>
 //클라이언트는 이를 통해 책을 추가, 조회, 수정, 삭제할 수 있음.<br/>
 
+``` 
 // 도서를 신규 등록  
-``` @PostMapping
+@PostMapping
     public Book createBook(@RequestBody Book book){
         book.setCreatedAt(LocalDateTime.now());
         return bookService.insertBook(book);
