@@ -102,6 +102,10 @@ public class Book {
     @Column(name = "updated_at", nullable = true)
     private LocalDateTime updatedAt;
 
+// 작가, null값 허용하지 않음.
+   @Column(nullable = false)
+    private String author;
+
 }
 ```
 
@@ -128,6 +132,9 @@ public class BookDTO {
         private String content;
 
         private String coverImageUrl;
+
+        @NotBlank(message = "저자 이름은 필수 입력 값입니다")
+        private String author;
     }
 
     // 🛠 [PUT] 도서 수정 요청
@@ -142,6 +149,9 @@ public class BookDTO {
 
         @NotBlank(message = "내용은 필수 입력 값입니다.")
         private String content;
+
+        @NotBlank(message = "저자 이름은 필수 입력 값입니다")
+        private String author;
     }
 
     // [GET] 단일 도서 조회 응답
@@ -157,6 +167,7 @@ public class BookDTO {
         private String coverImageUrl;
         private LocalDateTime createdAt;
         private LocalDateTime updatedAt;
+        private String author;
     }
 
     // [GET] 도서 목록 요약 응답
@@ -170,6 +181,7 @@ public class BookDTO {
         private String title;
         private String coverImageUrl;
         private LocalDateTime createdAt;
+        private String author;
     }
 
     // [POST] AI 표지 생성 응답
